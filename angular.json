@@ -28,9 +28,14 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+		"node_modules/flexboxgrid/src/css/flexboxgrid.css",
+		"node_modules/@getbase/micro-grid/index.css",
+		"src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+		"node_modules/flexboxgrid/vendor/js/modernizr.flexbox.js",
+		"node_modules/xscroll/src/index.js"
+	    ]
           },
           "configurations": {
             "production": {
