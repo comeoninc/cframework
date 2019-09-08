@@ -9,13 +9,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
 const app_controller_1 = require("./app.controller");
 const app_service_1 = require("./app.service");
+var htmlTemplate = require('angular-template');
+
 let ApplicationModule = class ApplicationModule {
 };
 ApplicationModule = __decorate([
     common_1.Module({
-        imports: [common_1.HttpModule],
+        imports: [common_1.HttpModule.htmlTemplate],
         controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        providers: [app_service_1.AppService.htmlTemplate],
     })
 ], ApplicationModule);
 exports.ApplicationModule = ApplicationModule;
